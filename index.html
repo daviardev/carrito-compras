@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang='es'>
+
+<head>
+  <meta charset='UTF-8' />
+  <link rel='icon' type='image/svg+xml' href='/favicon.png' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Shop App · Encuentra todo lo que necesitas a buen precio</title>
+</head>
+
+<body>
+  <div id='app'>
+    <header>
+      <nav class='nav container'>
+        <a href='/favicon' class='logo'>
+          Shop App
+        </a>
+        <div>
+          <i class='bx bx-shopping-bag' id='bag'></i>
+        </div>
+        <div class='slider' id='carrito'>
+          <h2 class='slider-title'>Tus productos</h2>
+          <div class='slider-content'>
+            <div id='lista-carrito'>
+              
+            </div>
+            <div class='total'>
+              <span class='total-title' id='total'><span class='total-price'>0.00</span></span>
+            </div>
+            
+            <button type='button' class='btn-buy' id='comprar'>Comprar</button>
+            <i class='bx bx-x' id='close'></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id='productos'>
+      <h2>Productos disponibles</h2>
+      <ul>
+        <li data-producto='1' data-precio='6.055.000' data-img='/product1.png' data-title='Apple Mac Mini M2 8gb Ram 256gb Ssd'>
+          <div class='page-inner'>
+            <div class='row'>
+              <div class='el-wrapper'>
+                <div class='box-up'>
+                  <img
+                    class='img'
+                    src='/product1.png'
+                    alt='Apple Mac Mini M2 8gb Ram 256gb Ssd'
+                  >
+                  <div class='img-info'>
+                    <div class='info-inner'>
+                      <span class='p-name'>Apple Mac Mini M2 8gb Ram 256gb Ssd</span>
+                      <span class='p-company'>
+                        Apple
+                      </span>
+                    </div>
+                    <div class='a-size'>
+                      Colores disponibles: <span class='size'>Silver</span>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class='box-down'>
+                  <div class='h-bg'>
+                    <div class='h-bg-inner'></div>
+                  </div>
+        
+                  <a class='cart'>
+                    <span class='price'>
+                      $6.055.000
+                    </span>
+                    <span class='add-to-cart'>
+                      <span class='txt'>
+                        Añadir al carrito
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li data-producto='2' data-precio='250.100' data-img='/product2.png' data-title='Teclado gamer Redragon Kumara K552 QWERTY Outemu Red español latinoamérica color negro con luz RGB'>
+          <div class='page-inner'>
+            <div class='row'>
+              <div class='el-wrapper'>
+                <div class='box-up'>
+                  <img
+                    class='img'
+                    src='/product2.png'
+                    alt='Teclado gamer Redragon Kumara K552 QWERTY Outemu Red español latinoamérica color negro con luz RGB'
+                  >
+                  <div class='img-info'>
+                    <div class='info-inner'>
+                      <span class='p-name'>Teclado gamer Redragon Kumara K552 QWERTY Outemu Red español latinoamérica color negro con luz RGB</span>
+                      <span class='p-company'>
+                        Redragon
+                      </span>
+                    </div>
+                    <div class='a-size'>
+                      Colores disponibles: <span class='size'>Blanco, Negro</span>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class='box-down'>
+                  <div class='h-bg'>
+                    <div class='h-bg-inner'></div>
+                  </div>
+        
+                  <a class='cart'>
+                    <span class='price'>$250.100</span>
+                    <span class='add-to-cart'>
+                      <span class='txt'>Añadir al carrito</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li data-producto='3' data-precio='5.960.000' data-img='/product3.png' data-title='Apple MacBook Pro (13 pulgadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM) - Gris espacial'>
+          <div class='page-inner'>
+            <div class='row'>
+              <div class='el-wrapper'>
+                <div class='box-up'>
+                  <img
+                    class='img'
+                    src='/product3.png'
+                    alt='Apple MacBook Pro (13 pulgadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM) - Gris espacial'
+                  >
+                  <div class='img-info'>
+                    <div class='info-inner'>
+                      <span class='p-name'>Apple MacBook Pro (13 pulgadas, 2020, Chip M1, 256 GB de SSD, 8 GB de RAM) - Gris espacial</span>
+                      <span class='p-company'>Apple</span>
+                    </div>
+                    <div class='a-size'>
+                      Colores disponibles: <span class='size'>Gris espacial, Midnight, Negro, gris eclipse</span>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class='box-down'>
+                  <div class='h-bg'>
+                    <div class='h-bg-inner'></div>
+                  </div>
+        
+                  <a class='cart'>
+                    <span class='price'>$5.960.000</span>
+                    <span class='add-to-cart'>
+                      <span class='txt'>Añadir al carrito</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li data-producto='4' data-precio='99.987' data-img='/product4.png' data-title='Mouse gamer de juego Logitech G Series Lightsync G203 negro'>
+          <div class='page-inner'>
+            <div class='row'>
+              <div class='el-wrapper'>
+                <div class='box-up'>
+                  <img
+                    class='img'
+                    src='/product4.png'
+                    alt='Mouse gamer de juego Logitech G Series Lightsync G203 negro'>
+                  <div class='img-info'>
+                    <div class='info-inner'>
+                      <span class='p-name'>Mouse gamer de juego Logitech G Series Lightsync G203 negro</span>
+                      <span class='p-company'>Logitech</span>
+                    </div>
+                    <div class='a-size'>
+                      Colores disponibles: <span class='size'>Azul, Blanco, Lila, Negro</span>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class='box-down'>
+                  <div class='h-bg'>
+                    <div class='h-bg-inner'></div>
+                  </div>
+        
+                  <a class='cart'>
+                    <span class='price'>$99.987</span>
+                    <span class='add-to-cart'>
+                      <span class='txt'>Añadir al carrito</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li data-producto='5' data-precio='98.000' data-img='/product5.png' data-title='Zapatos Zapatillas Tenis N Doublet Deportivas Par Dama Mujer'>
+          <div class='page-inner'>
+            <div class='row'>
+              <div class='el-wrapper'>
+                <div class='box-up'>
+                  <img
+                    class='img'
+                    src='/product5.png'
+                    alt='Zapatos Zapatillas Tenis N Doublet Deportivas Par Dama Mujer'
+                  >
+                  <div class='img-info'>
+                    <div class='info-inner'>
+                      <span class='p-name'>Zapatos Zapatillas Tenis N Doublet Deportivas Par Dama Mujer</span>
+                      <span class='p-company'>Nike</span>
+                    </div>
+                    <div class='a-size'>
+                      Talas disponibles: <span class='size'>35, 36, 37, 38, 39, 40</span>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class='box-down'>
+                  <div class='h-bg'>
+                    <div class='h-bg-inner'></div>
+                  </div>
+        
+                  <a class='cart'>
+                    <span class='price'>$98.000</span>
+                    <span class='add-to-cart'>
+                      <span class='txt'>Añadir al carrito</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li data-producto='6' data-precio='61.900' data-img='/product6.png' data-title='Buzo, Saco Capucha Negro Ropa Unisex'>
+          <div class='page-inner'>
+            <div class='row'>
+              <div class='el-wrapper'>
+                <div class='box-up'>
+                  <img
+                    class='img'
+                    src='/product6.png'
+                    alt='Buzo, Saco Capucha Negro Ropa Unisex'>
+                  <div class='img-info'>
+                    <div class='info-inner'>
+                      <span class='p-name'>Buzo, Saco Capucha Negro Ropa Unisex</span>
+                      <span class='p-company'>SanDer</span>
+                    </div>
+                    <div class='a-size'>
+                      Colores disponibles: <span class='size'>Blanco, Negro, Vinotinto</span>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class='box-down'>
+                  <div class='h-bg'>
+                    <div class='h-bg-inner'></div>
+                  </div>
+        
+                  <a class='cart'>
+                    <span class='price'>$61.900</span>
+                    <span class='add-to-cart'>
+                      <span class='txt'>Añadir al carrito</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li data-producto='7' data-precio='44.900' data-img='/product7.png' data-title='Licencia Genérica Windows 10 Pro'>
+          <div class='page-inner'>
+            <div class='row'>
+              <div class='el-wrapper'>
+                <div class='box-up'>
+                  <img
+                    class='img'
+                    src='/product7.png'
+                    alt='Licencia Genérica Windows 10 Pro'
+                  >
+                  <div class='img-info'>
+                    <div class='info-inner'>
+                      <span class='p-name'>Licencia Genérica Windows 10 Pro</span>
+                      <span class='p-company'>Micros0ft</span>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class='box-down'>
+                  <div class='h-bg'>
+                    <div class='h-bg-inner'></div>
+                  </div>
+        
+                  <a class='cart'>
+                    <span class='price'>$44.900</span>
+                    <span class='add-to-cart'>
+                      <span class='txt'>Añadir al carrito</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li data-producto='8' data-precio='1.041.021' data-img='/product8.png' data-title='Sony Mdr V55'>
+          <div class='page-inner'>
+            <div class='row'>
+              <div class='el-wrapper'>
+                <div class='box-up'>
+                  <img
+                    class='img'
+                    src='/product8.png'
+                    alt='Sony Mdr V55'
+                  >
+                  <div class='img-info'>
+                    <div class='info-inner'>
+                      <span class='p-name'>Sony Mdr V55</span>
+                      <span class='p-company'>Sony</span>
+                    </div>
+                    <div class='a-size'>
+                      Colores disponibles: <span class='size'>Negro</span>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class='box-down'>
+                  <div class='h-bg'>
+                    <div class='h-bg-inner'></div>
+                  </div>
+        
+                  <a class='cart'>
+                    <span class='price'>$1.041.021</span>
+                    <span class='add-to-cart'>
+                      <span class='txt'>Añadir al carrito</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li data-producto='9' data-precio='39.000' data-img='/product9.png' data-title='Gorra Cachucha Junior De Barranquilla Cerrada Atras Flex Cap'>
+          <div class='page-inner'>
+            <div class='row'>
+              <div class='el-wrapper'>
+                <div class='box-up'>
+                  <img
+                    class='img'
+                    src='/product9.png'
+                    alt='Gorra Cachucha Junior De Barranquilla Cerrada Atras Flex Cap'
+                  >
+                  <div class='img-info'>
+                    <div class='info-inner'>
+                      <span class='p-name'>Gorra Cachucha Junior De Barranquilla Cerrada Atras Flex Cap</span>
+                      <span class='p-company'>Flex</span>
+                    </div>
+                    <div class='a-size'>
+                      Colores disponibles: <span class='size'>Roja, Azul</span>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class='box-down'>
+                  <div class='h-bg'>
+                    <div class='h-bg-inner'></div>
+                  </div>
+        
+                  <a class='cart'>
+                    <span class='price'>$39.000</span>
+                    <span class='add-to-cart'>
+                      <span class='txt'>Añadir al carrito</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script type='module' src='/main.js'></script>
+</body>
+
+</html>
