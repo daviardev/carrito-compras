@@ -95,18 +95,17 @@ a {
   font-weight: 500;
 }
 
-.count {
+.total-bag > p {
   background-color: red;
   border-radius: 9999px;
   display: flex;
-  text-align: center;
-  width: 65%;
-  color: white;
-  font-weight: bolder;
-  position: relative;
-  top: -33px;
-  right: -15px;
   justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 1.5px 6px;
+  position: absolute;
+  top: 15%;
+  left: 89.5%;
 }
 
 .total {

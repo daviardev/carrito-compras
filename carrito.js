@@ -4,6 +4,7 @@ import { $, $$ } from './utils/dom'
 
 const productos = $$('#productos li')
 const carritoLista = $('#lista-carrito')
+const totalProductos = $('#total-products')
 const totalElement = $('#total')
 const vaciarCarrito = $('#comprar')
 
@@ -12,6 +13,10 @@ const vaciarCarrito = $('#comprar')
 let carrito = []
 
 // Función que carga los productos
+
+function actualizarTotalProductos () {
+  totalProductos.textContent = carrito.length.toString()
+}
 
 function recuperarCarrito () {
   const compraRecuperada = window.localStorage.getItem('carrito')
@@ -46,6 +51,7 @@ function agregarCarrito (producto) {
   carrito.push(carritoItem)
   actualizarCarrito()
   guardarLista()
+  actualizarTotalProductos()
 }
 
 // Actualizar la lista de los productos agregados
@@ -65,7 +71,7 @@ function actualizarCarrito () {
       >
       <div class='detail-box'>
         <span class='slider-product-title'>${item.title}</span>
-        <span class='slider-price'>$${item.precio.toFixed(2)}</span>
+        <span class='slider-price'>$${item.precio.toLocaleString()}</span>
       </div>
     </div>
   `
@@ -73,7 +79,7 @@ function actualizarCarrito () {
     total += item.precio
   })
 
-  totalElement.textContent = `Total ${total.toFixed(2)}`
+  totalElement.textContent = `Total ${total.toLocaleString()}`
 }
 
 // Realizar la compra
@@ -82,11 +88,14 @@ function comprarProductos () {
   carrito = []
   actualizarCarrito()
   window.localStorage.removeItem('carrito')
+
+  actualizarTotalProductos()
 }
 
 // Recuperación a errores inesperados
 
 recuperarCarrito()
+actualizarTotalProductos()
 
 // Agregar productos al carrito
 
